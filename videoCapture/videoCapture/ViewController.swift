@@ -8,11 +8,16 @@
 
 import UIKit
 import AVFoundation
+import GPUImage
 
 class ViewController: UIViewController {
     @IBOutlet weak var startCapture: UIButton!
     @IBOutlet weak var stopCapture: UIButton!
     @IBOutlet weak var Sceme: UIButton!
+    @IBOutlet weak var simpleBeauty: UIButton!
+    @IBOutlet weak var filterBeauty: UIButton!
+    @IBOutlet weak var brightnesSlider: UISlider!
+    @IBOutlet weak var bilateralSiler: UISlider!
     //普通队列
     fileprivate lazy var videoQueue = DispatchQueue.global()
     fileprivate lazy var audioQueue = DispatchQueue.global()
@@ -24,16 +29,24 @@ class ViewController: UIViewController {
     //输出源
     fileprivate var videoOutput : AVCaptureVideoDataOutput?
     fileprivate var audioOutput : AVCaptureAudioDataOutput?
-    
-
     //相机拍摄预览图层，能实时查看拍照或视频录制效果
     fileprivate lazy var previewlayer = AVCaptureVideoPreviewLayer(session: self.session)
     
+    
+    //美颜
+    fileprivate var videoCamera : GPUImageVideoCamera?
+    fileprivate var bilateralFilter : GPUImageBilateralFilter?
+    fileprivate var brightnessFilter : GPUImageBrightnessFilter?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         startCapture.addTarget(self, action: #selector(start), for: UIControlEvents.touchDown)
         stopCapture.addTarget(self, action: #selector(stop), for: UIControlEvents.touchDown)
         Sceme.addTarget(self, action: #selector(swithSceme), for: UIControlEvents.touchDown)
+        simpleBeauty.addTarget(self, action: #selector(simpleAction), for: UIControlEvents.touchDown)
+        
+        brightnesSlider.addTarget(self, action:#selector(brightnessFilterAction(sender:)), for: UIControlEvents.touchUpInside)
+        bilateralSiler.addTarget(self, action: #selector(bilateralFilterAction(sender:)), for: UIControlEvents.touchUpInside)
     }
 
 }
@@ -177,6 +190,59 @@ extension ViewController : AVCaptureVideoDataOutputSampleBufferDelegate ,AVCaptu
             print("采集视频数据")
         }
     }
+    
+}
+
+//GPUImage原生美颜
+extension ViewController {
+    
+    @objc func simpleAction()  {
+
+        // 创建视频源
+        // SessionPreset:屏幕分辨率，AVCaptureSessionPresetHigh会自适应高分辨率
+        // cameraPosition:摄像头方向
+        let videoCamera = GPUImageVideoCamera.init(sessionPreset:AVCaptureSession.Preset.high.rawValue , cameraPosition: .front)
+        videoCamera?.outputImageOrientation = .portrait
+        self.videoCamera = videoCamera;
+        // 创建最终预览View
+        let captureVideoPreview = GPUImageView(frame: self.view.bounds)
+        view.insertSubview(captureVideoPreview, at: 0)
+        // 创建滤镜：磨皮，美白，组合滤镜
+        let groupFilter = GPUImageFilterGroup()
+        // 磨皮滤镜
+        let bilateralFilter = GPUImageBilateralFilter()
+        groupFilter.addTarget(bilateralFilter)
+        self.bilateralFilter = bilateralFilter
+        // 美白滤镜
+        let brightnessFilter = GPUImageBrightnessFilter()
+        groupFilter.addTarget(brightnessFilter)
+        self.brightnessFilter = brightnessFilter;
+        // 设置滤镜组链
+        bilateralFilter.addTarget(brightnessFilter)
+        groupFilter.initialFilters = [bilateralFilter]
+        groupFilter.terminalFilter = brightnessFilter
+        // 设置GPUImage响应链，从数据源 => 滤镜 => 最终界面效果
+        videoCamera?.addTarget(groupFilter)
+        groupFilter.addTarget(captureVideoPreview)
+     
+        // 必须调用startCameraCapture，底层才会把采集到的视频源，渲染到GPUImageView中，就能显示了。
+        // 开始采集视频
+        videoCamera?.startCapture()
+    }
+    
+
+    
+    @objc func brightnessFilterAction(sender :UISlider ) {
+        brightnessFilter?.brightness = CGFloat(sender.value)
+
+    }
+ 
+    @objc func bilateralFilterAction(sender:UISlider)  {
+        // 值越小，磨皮效果越好
+        let maxValue : CGFloat = 10;
+        bilateralFilter?.distanceNormalizationFactor = maxValue - CGFloat(sender.value)
+    }
+ 
     
 }
 
