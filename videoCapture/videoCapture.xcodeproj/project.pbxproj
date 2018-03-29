@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1571D033114DC1C0B7792239 /* Pods_videoCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244BBB4634B2EF845BF58CB7 /* Pods_videoCapture.framework */; };
+		2FBD476AFE35333F831B9F42 /* Pods_videoCaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741534F464EC7D3FE8ECECC0 /* Pods_videoCaptureUITests.framework */; };
 		510C0AF3206A95D700D1C745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0AF2206A95D700D1C745 /* AppDelegate.swift */; };
 		510C0AF5206A95D700D1C745 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0AF4206A95D700D1C745 /* ViewController.swift */; };
 		510C0AF8206A95D700D1C745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510C0AF6206A95D700D1C745 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		510C0AFD206A95D700D1C745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510C0AFB206A95D700D1C745 /* LaunchScreen.storyboard */; };
 		510C0B08206A95D800D1C745 /* videoCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0B07206A95D800D1C745 /* videoCaptureTests.swift */; };
 		510C0B13206A95D800D1C745 /* videoCaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0B12206A95D800D1C745 /* videoCaptureUITests.swift */; };
+		5558E3CEC928FECAB10B613F /* Pods_videoCaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B577F30580005CBC2FD87E /* Pods_videoCaptureTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		244BBB4634B2EF845BF58CB7 /* Pods_videoCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_videoCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8FBFC29A1B0292667B91B6 /* Pods-videoCaptureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoCaptureUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-videoCaptureUITests/Pods-videoCaptureUITests.release.xcconfig"; sourceTree = "<group>"; };
 		510C0AEF206A95D700D1C745 /* videoCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		510C0AF2206A95D700D1C745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		510C0AF4206A95D700D1C745 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		510C0B0E206A95D800D1C745 /* videoCaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoCaptureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		510C0B12206A95D800D1C745 /* videoCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoCaptureUITests.swift; sourceTree = "<group>"; };
 		510C0B14206A95D800D1C745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CDC7448D73FE85127685624 /* Pods-videoCaptureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoCaptureUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-videoCaptureUITests/Pods-videoCaptureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		741534F464EC7D3FE8ECECC0 /* Pods_videoCaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_videoCaptureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9130AF087C54B90283655C90 /* Pods-videoCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoCaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-videoCaptureTests/Pods-videoCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
+		93B577F30580005CBC2FD87E /* Pods_videoCaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_videoCaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7FDA4D0D73D500FBB06CBE /* Pods-videoCaptureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoCaptureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-videoCaptureTests/Pods-videoCaptureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3D223F377341357B8D29770 /* Pods-videoCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-videoCapture/Pods-videoCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		DBF4A7A0D9D00F2E3CBCE3FD /* Pods-videoCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-videoCapture/Pods-videoCapture.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1571D033114DC1C0B7792239 /* Pods_videoCapture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5558E3CEC928FECAB10B613F /* Pods_videoCaptureTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBD476AFE35333F831B9F42 /* Pods_videoCaptureUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				510C0B06206A95D800D1C745 /* videoCaptureTests */,
 				510C0B11206A95D800D1C745 /* videoCaptureUITests */,
 				510C0AF0206A95D700D1C745 /* Products */,
+				55125D42A2954C99209921CF /* Pods */,
+				BFFDDED286990939E7198FF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = videoCaptureUITests;
 			sourceTree = "<group>";
 		};
+		55125D42A2954C99209921CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3D223F377341357B8D29770 /* Pods-videoCapture.debug.xcconfig */,
+				DBF4A7A0D9D00F2E3CBCE3FD /* Pods-videoCapture.release.xcconfig */,
+				CC7FDA4D0D73D500FBB06CBE /* Pods-videoCaptureTests.debug.xcconfig */,
+				9130AF087C54B90283655C90 /* Pods-videoCaptureTests.release.xcconfig */,
+				5CDC7448D73FE85127685624 /* Pods-videoCaptureUITests.debug.xcconfig */,
+				4A8FBFC29A1B0292667B91B6 /* Pods-videoCaptureUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFFDDED286990939E7198FF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				244BBB4634B2EF845BF58CB7 /* Pods_videoCapture.framework */,
+				93B577F30580005CBC2FD87E /* Pods_videoCaptureTests.framework */,
+				741534F464EC7D3FE8ECECC0 /* Pods_videoCaptureUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 510C0B17206A95D800D1C745 /* Build configuration list for PBXNativeTarget "videoCapture" */;
 			buildPhases = (
+				8157E3DD6090567199839654 /* [CP] Check Pods Manifest.lock */,
 				510C0AEB206A95D700D1C745 /* Sources */,
 				510C0AEC206A95D700D1C745 /* Frameworks */,
 				510C0AED206A95D700D1C745 /* Resources */,
+				79BD3021CF385CDC92B178C3 /* [CP] Embed Pods Frameworks */,
+				ED7C718756A5EC765B2AC01E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 510C0B1A206A95D800D1C745 /* Build configuration list for PBXNativeTarget "videoCaptureTests" */;
 			buildPhases = (
+				A7E132CF8748D0589924D7F0 /* [CP] Check Pods Manifest.lock */,
 				510C0AFF206A95D800D1C745 /* Sources */,
 				510C0B00206A95D800D1C745 /* Frameworks */,
 				510C0B01206A95D800D1C745 /* Resources */,
+				382EB05F6087973B174C0FF7 /* [CP] Embed Pods Frameworks */,
+				6268855D9B8F770E821CC2EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 510C0B1D206A95D800D1C745 /* Build configuration list for PBXNativeTarget "videoCaptureUITests" */;
 			buildPhases = (
+				F953474D8837F773276287EA /* [CP] Check Pods Manifest.lock */,
 				510C0B0A206A95D800D1C745 /* Sources */,
 				510C0B0B206A95D800D1C745 /* Frameworks */,
 				510C0B0C206A95D800D1C745 /* Resources */,
+				D623960BFAA38EF41B2F04FF /* [CP] Embed Pods Frameworks */,
+				D8DA9C32A24FE356D0805CF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		382EB05F6087973B174C0FF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-videoCaptureTests/Pods-videoCaptureTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6268855D9B8F770E821CC2EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-videoCaptureTests/Pods-videoCaptureTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79BD3021CF385CDC92B178C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-videoCapture/Pods-videoCapture-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-videoCapture/Pods-videoCapture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8157E3DD6090567199839654 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-videoCapture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7E132CF8748D0589924D7F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-videoCaptureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D623960BFAA38EF41B2F04FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-videoCaptureUITests/Pods-videoCaptureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8DA9C32A24FE356D0805CF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-videoCaptureUITests/Pods-videoCaptureUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED7C718756A5EC765B2AC01E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-videoCapture/Pods-videoCapture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F953474D8837F773276287EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-videoCaptureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		510C0AEB206A95D700D1C745 /* Sources */ = {
@@ -424,6 +623,7 @@
 		};
 		510C0B18206A95D800D1C745 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3D223F377341357B8D29770 /* Pods-videoCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +640,7 @@
 		};
 		510C0B19206A95D800D1C745 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF4A7A0D9D00F2E3CBCE3FD /* Pods-videoCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +657,7 @@
 		};
 		510C0B1B206A95D800D1C745 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC7FDA4D0D73D500FBB06CBE /* Pods-videoCaptureTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -472,6 +674,7 @@
 		};
 		510C0B1C206A95D800D1C745 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9130AF087C54B90283655C90 /* Pods-videoCaptureTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +691,7 @@
 		};
 		510C0B1E206A95D800D1C745 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CDC7448D73FE85127685624 /* Pods-videoCaptureUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +707,7 @@
 		};
 		510C0B1F206A95D800D1C745 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A8FBFC29A1B0292667B91B6 /* Pods-videoCaptureUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
